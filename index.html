@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Derechos en Linea</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Fiscal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Opciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Perfil</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar tall">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Mis Casos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ingresar Nuevo Caso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Salir</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+                <div class="jumbotron fixed">
+                    <h3>Formulario Nuevo Caso - Usuario | Fiscal </h3>
+                </div>
+
+                <form>
+                    <div class="row col-sm-12">
+                        <div class="col-sm-4">
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label"><b>R.U.C. de la causa</b></label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="1234567890-1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group row ">
+                                <label for="staticEmail" class="col-sm-4 col-form-label"><b>Tipo de Ingreso</b></label>
+                                <div class="col-sm-6 text-right">
+                                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Valor fijo">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <!-- Id sujeto -->
+                    <div class="row col-md-12">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <h4 class="card-header">Identificación sujeto de atención</h4>
+                                <div class="card-body">
+                                    <div class="row col-sm-12">
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">RUT</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">picture_in_picture</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="12345678-9">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Nombre</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">person</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nombre Apellidos">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Correo</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">email</i></div>
+                                                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="correo@mail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row col-sm-12">
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Fecha de nacimiento</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">date_range</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="05/07/1960">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Teléfono Principal</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">call</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="1234567">
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Teléfono Secundario</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">call</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="1234567">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row col-sm-12">
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Domicilio</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">add_location</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Calle Número, Departamento">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-sm-4">
+                                            <label for="exampleInputRut">Fiscalia de Origen</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">domain</i></div>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Fiscalia 1</option>
+                                  <option>Fiscalia 2</option>
+                                  <option>Fiscalia 3</option>
+                                  <option>Fiscalia 4</option>
+                                  <option>Fiscalia 5</option>
+                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-sm-2">
+                                            <label for="exampleInputRut">Materia</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">list</i></div>
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Materia 1</option>
+                                  <option>Materia 2</option>
+                                  <option>Materia 3</option>
+                                  <option>Materia 4</option>
+                                  <option>Materia 5</option>
+                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-sm-2">
+                                            <label for="exampleInputRut">Nueva materia</label>
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons">add</i></div>
+                                                <input class="form-control" id="exampleFormControlSelect1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end id sujeto -->
+                    <br>
+
+
+
+                    <div class="row col-md-12">
+
+                        <div class="col-md-6">
+
+                            <div class="card">
+
+                                <h4 class="card-header">Fiscal a cargo o funcionario URAVIT</h4>
+
+                                <div class="card-body">
+
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label"><b>Nombre</b></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Fiscal Nombre Apellido">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label"><b>Correo Electrónico</b></label>
+                                        <div class="col-sm-6">
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons blue">email</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="correo@mail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputPassword" class="col-sm-4 col-form-label"><b>Fono Directo</b></label>
+                                        <div class="col-sm-6">
+                                            <div class="input-group mb-2 mb-sm-0">
+                                                <div class="input-group-addon"><i class="material-icons blue">call</i></div>
+                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="12345678">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class=" col-md-6 ">
+                            <div class="card">
+
+                                <h4 class="card-header">Documentos</h4>
+
+                                <div class="card-body">
+
+
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label"><b>Adjuntar Oficio Conductor</b></label>
+                                        <div class="col-sm-8">
+                                            <button class="btn btn-info btn-sm" id="exampleFormControlFile1"><i class="material-icons">insert_drive_file</i><i class="material-icons">attach_file</i></button> Documento1.docx
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label"><b>Adjuntar Expediente</b></label>
+                                        <div class="col-sm-8">
+                                            <button class="btn btn-info btn-sm" id="exampleFormControlFile1"><i class="material-icons">insert_drive_file</i><i class="material-icons">attach_file</i></button> Documento2.pdf
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-4 col-form-label"><b>Adjuntar Solicitud</b></label>
+                                        <div class="col-sm-8">
+                                            <button class="btn btn-info btn-sm" id="exampleFormControlFile1"><i class="material-icons">insert_drive_file</i><i class="material-icons">attach_file</i></button> Documento3.pdf
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row col-sm-12">
+                        <div class="form-group col-sm-6">
+                            <label for="exampleInputEmail1"><b>Observaciones del solicitante</b></label>
+                            <br>
+                            <textarea type="text" class="form-control" id="exampleInputEmail1" rows="2"> </textarea>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row col-sm-12">
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-success ingresar">Ingresar Caso</button>
+                        </div>
+                    </div>
+
+
+                </form>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
