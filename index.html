@@ -16,45 +16,72 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Derechos en Linea</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Fiscal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Opciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
-                    </li>
-                </ul>
+          <div class="row container-fluid col-sm-12">
+            <div class="col-sm-2 text-center">
+              <a class="navbar-brand" href="#"><i class="material-icons icon-align">account_balance</i> Derechos en Linea</a>
+            </div>
+
+            <div class="col-sm-8">
 
             </div>
+
+            <div class="col-sm-1 white">
+              <span> <i class="material-icons icon-align">person</i><b> Juan Valdéz </b></span>
+            </div>
+
+            <div class="col-sm-1 white">
+              <span><i class="material-icons icon-align">exit_to_app</i> Cerrar Sesión</span>
+            </div>
+
+          </div>
+
+
+
+
         </nav>
     </header>
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar tall">
-                <ul class="nav nav-pills flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> Mis Casos</a>
+            <nav class="col-sm-2 bg-dark sidebar" id="navbarsExampleDefault">
+
+                <ul class="nav nav-pills flex-column" >
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                      <a class="nav-link text-center" href=# >
+                        <i class="material-icons md-180 gray">person_pin</i>
+                      </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ingresar Nuevo Caso</a>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                      <a class="nav-link text-center" href="tables.html">
+                        <span class="nav-link-text white large"> Fiscal / Asistente </span>
+                      </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Salir</a>
+                    <hr>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                      <a class="nav-link" href="tables.html">
+
+                        <span class="nav-link-text medium white"><i class="material-icons icon-align gray">list</i> Mis Casos</span>
+                      </a>
                     </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                      <a class="nav-link" href="tables.html">
+
+                        <span class="nav-link-text medium white"><i class="material-icons icon-align gray">playlist_add</i> Ingresar nuevo caso</span>
+                      </a>
+                    </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                      <a class="nav-link" href="tables.html">
+
+                        <span class="nav-link-text medium white"><i class="material-icons icon-align gray">help</i> Ayuda</span>
+                      </a>
+                    </li>
+
                 </ul>
+
             </nav>
 
-            <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
+            <main role="main" class="col-sm-10 ml-sm-auto col-md-10 pt-3">
                 <div class="jumbotron fixed">
                     <h3>Formulario Nuevo Caso - Usuario | Fiscal </h3>
                 </div>
